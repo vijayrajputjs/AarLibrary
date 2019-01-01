@@ -1,0 +1,38 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.antoniocappiello.library' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.vijayrajputjs.root.group' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'aarlibrary' // THE NAME OF YOUR MODULE
+
+                name 'AarLibrary' // YOUR LIBRARY NAME
+                description 'This is demo aar library to understand library making' // YOUR LIBRARY DESCRIPTION
+                url 'https://www.jstechalliance.com/' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+//                developers {
+//                    developer {
+//                        id 'vijayrajput007' //YOUR ID
+//                        name 'Vijay Rajput' //YOUR NAME
+//                        email 'vijay.rajput@jsinformatics.com' //YOUR EMAIL
+//                    }
+//                }
+//                scm {
+//                    connection 'https://www.jstechalliance.com/' // YOUR GIT REPO
+//                    developerConnection 'https://www.jstechalliance.com/' // YOUR GIT REPO
+//                    url 'https://www.jstechalliance.com/' // YOUR SITE
+//                }
+            }
+        }
+    }
+}
